@@ -11,7 +11,7 @@ variable "instance_type" {
   type = map(string)
 
   default = {
-    "dev" = "t2.small"
+    "dev" = "t3.small"
     "qa" = "t3.micro"
     "prod" = "c7i-flex.large"
   }

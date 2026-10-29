@@ -24,7 +24,7 @@ variable "subnet" {
 module "ec2_instnace" {
   source = "./module/ec2_instance"
   ami = var.ami
-  instance_type = lookup(instance_type, terraform.workspace, "t2.small")
+  instance_type = lookup(var.instance_type, terraform.workspace, "t3.small")
   subnet = var.subnet
 }
 
